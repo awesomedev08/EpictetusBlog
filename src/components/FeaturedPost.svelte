@@ -1,5 +1,7 @@
 <div class="flex gap-5">
-    <img src="/FeaturedImg.png" alt="Featured Posts" class="w-8/12 rounded-lg">
+    <div class="w-8/12">
+        <img src="/FeaturedImg.png" alt="Featured Posts" class="rounded-lg h-fit">
+    </div>
     <div class="p-8 w-4/12 space-y-4">
         <div class="flex gap-2 items-center text-white text-opacity-60">
             <h1>UI DESIGN</h1>
