@@ -1,9 +1,13 @@
+<script>
+    let title = 'Epictetus'
+</script>
+
 <div class="flex justify-between items-center pb-12">
 	<div class="flex gap-3 items-center">
 		<div class="bg-[#4B5563] w-fit px-4 py-1 rounded-md">
-			<span class="text-2xl">E</span>
+			<span class="text-2xl">{title.charAt(0)}</span>
 		</div>
-		<h1 class="text-lg">Epictetus</h1>
+		<h1 class="text-lg">{title}</h1>
 	</div>
 
 	<div class="space-x-5">
@@ -21,7 +25,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-4 h-w-4"
+				class="w-4 h-w-4 text-white text-opacity-50"
 			>
 				<path
 					stroke-linecap="round"

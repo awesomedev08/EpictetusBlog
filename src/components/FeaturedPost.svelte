@@ -1,0 +1,19 @@
+<div class="flex gap-5">
+    <img src="/FeaturedImg.png" alt="Featured Posts" class="w-8/12 rounded-lg">
+    <div class="p-8 w-4/12 space-y-4">
+        <div class="flex gap-2 items-center text-white text-opacity-60">
+            <h1>UI DESIGN</h1>
+            <span class="font-sans">&bull;</span>
+            <h1>July 2, 2021</h1>
+        </div>
+        <h1 class="text-3xl leading-normal">Understanding color theory: the color wheel and finding complementary colors</h1>
+        <p class="text-white text-opacity-60 leading-relaxed">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
+        <div class="flex gap-5 items-center pt-4">
+            <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="Users" class="w-14 rounded-full">
+            <div>
+                <h1>Leslie Alexander</h1>
+                <h3 class="text-white text-opacity-60">UI Designer</h3>
+            </div>
+        </div>
+    </div>
+</div>

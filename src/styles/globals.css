@@ -9,10 +9,6 @@
 html {
     padding: 0;
     margin: 0;
-    height: 100vh;
-}
-
-body {
     background: linear-gradient(#374151, #111827);
     color: #fff;
 }
