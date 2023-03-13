@@ -1,9 +1,12 @@
 <script>
-	import SearchBarMobile from "./Search/SearchBarMobile.svelte";
+	// @ts-nocheck
+
+	import SearchBarMobile from './Search/SearchBarMobile.svelte';
+	import Sidebar from './Sidebar.svelte';
 
 	let title = 'Epictetus';
 	let search = '';
-
+	
 	let menu = [
 		{
 			slug: 'ui-design',
@@ -34,12 +37,15 @@
 
 	let openSearchMobile = false;
 	function toggleSearchMobile() {
-		return (openSearchMobile = !openSearchMobile)
+		return (openSearchMobile = !openSearchMobile);
 	}
+
+	let openSidebar = false
 </script>
 
 <div class="flex justify-between items-center md:pb-12 min-[300px]:pb-6">
-	<div class="md:hidden min-[300px]:block">
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
+	<div class="md:hidden min-[300px]:block" on:click={() => openSidebar = true}>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
@@ -83,7 +89,7 @@
 		</svg>
 	</div>
 
-	<div class="space-x-5 md:block min-[300px]:hidden">
+	<div class="space-x-5 md:inline-block min-[300px]:hidden">
 		{#if menu.length > 3}
 			{#each menu.splice(0, 3) as { slug, name }}
 				<a href={`/category/${slug}`}>{name}</a>
@@ -166,4 +172,5 @@
 		</form>
 	</div>
 </div>
-<SearchBarMobile show={openSearchMobile} search={search} />
+<SearchBarMobile show={openSearchMobile} {search} />
+<Sidebar bind:openSidebar={openSidebar} />
