@@ -1,6 +1,34 @@
 <script>
-    let title = 'Epictetus'
-	let search = ""
+	let title = 'Epictetus';
+	let search = '';
+
+	let menu = [
+		{
+			slug: 'ui-design',
+			name: 'UI Design'
+		},
+		{
+			slug: 'frontend',
+			name: 'Front-end'
+		},
+		{
+			slug: 'backend',
+			name: 'Back-end'
+		},
+		{
+			slug: 'golang',
+			name: 'Golang'
+		},
+		{
+			slug: 'android',
+			name: 'Android Developer'
+		}
+	];
+
+	let isOpen = false;
+	function toggleMenu() {
+		return (isOpen = !isOpen);
+	}
 </script>
 
 <div class="flex justify-between items-center pb-12">
@@ -14,10 +42,54 @@
 	</div>
 
 	<div class="space-x-5">
-		<a data-sveltekit-preload-data="tap" href="/">UI Design</a>
-		<a data-sveltekit-preload-data="tap" href="/">Front-end</a>
-		<a data-sveltekit-preload-data="tap" href="/">Back-end</a>
-		<a data-sveltekit-preload-data="tap" href="/">Lainnya</a>
+		{#if menu.length > 3}
+			{#each menu.splice(0, 3) as { slug, name }}
+				<a href={`/category/${slug}`}>{name}</a>
+			{/each}
+			<div class="inline-block relative">
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<div class="inline-flex gap-2 place-items-center" on:click={() => toggleMenu()}>
+					<!-- svelte-ignore a11y-invalid-attribute -->
+					<a data-sveltekit-preload-data="tap" href="#">Lainnya</a>
+					{#if isOpen}
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-4 h-4"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+						</svg>
+					{:else}
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-4 h-4"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+						</svg>
+					{/if}
+				</div>
+				<div
+					class={`absolute top-8 -left-7 w-36 px-4 py-2 bg-[#283140] rounded-md text-white text-opacity-60 ${
+						isOpen ? 'opacity-100' : 'opacity-0'
+					} transition-all ease-in-out duration-100`}
+				>
+					{#each menu as { slug, name }}
+						<a href={`/category/${slug}`} class="block py-1">{name}</a>
+					{/each}
+				</div>
+			</div>
+		{:else}
+			{#each menu as { slug, name }}
+				<a href={`/category/${slug}`}>{name}</a>
+			{/each}
+		{/if}
 	</div>
 
 	<div class="relative">
