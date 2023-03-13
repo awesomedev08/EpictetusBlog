@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import { page } from '$app/stores';
 	import PostWrapper from '../../components/Home/PostWrapper.svelte';
 	import ResultSearch from '../../components/Search/ResultSearch.svelte';
@@ -9,7 +11,7 @@
 	<title>Search: {search ?? ''}</title>
 </svelte:head>
 
-<ResultSearch search={search} />
+<ResultSearch bind:search={search} />
 
 {#if search == 'UI Design'}
 	<PostWrapper />

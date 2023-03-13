@@ -36,5 +36,5 @@
 	<title>Category - {find_data.category}</title>
 </svelte:head>
 
-<ResultSearch search={find_data.category} />
+<ResultSearch bind:search={find_data.category} />
 <PostWrapper />
