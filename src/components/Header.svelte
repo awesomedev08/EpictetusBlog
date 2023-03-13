@@ -1,4 +1,6 @@
 <script>
+	import SearchBarMobile from "./Search/SearchBarMobile.svelte";
+
 	let title = 'Epictetus';
 	let search = '';
 
@@ -29,9 +31,14 @@
 	function toggleMenu() {
 		return (isOpen = !isOpen);
 	}
+
+	let openSearchMobile = false;
+	function toggleSearchMobile() {
+		return (openSearchMobile = !openSearchMobile)
+	}
 </script>
 
-<div class="flex justify-between items-center pb-12">
+<div class="flex justify-between items-center md:pb-12 min-[300px]:pb-4">
 	<div class="md:hidden min-[300px]:block">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +65,8 @@
 		</h1>
 	</div>
 
-	<div class="md:hidden min-[300px]:block">
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
+	<div class="md:hidden min-[300px]:block" on:click={() => toggleSearchMobile()}>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
@@ -147,7 +155,7 @@
 				/>
 			</svg>
 		</span>
-		<form action={`/search`}>
+		<form action="/search">
 			<input
 				type="text"
 				class="bg-[#1F2937] bg-opacity-60 rounded-full outline-none pr-8 pl-12 py-2"
@@ -158,3 +166,4 @@
 		</form>
 	</div>
 </div>
+<SearchBarMobile show={openSearchMobile} search={search} />

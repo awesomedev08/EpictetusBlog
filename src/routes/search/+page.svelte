@@ -16,6 +16,6 @@
 {:else}
 	<div class="flex flex-col items-center text-center">
 		<h1 class="text-[64px]">No result 😢</h1>
-		<p class="text-xl w-1/3">We couldn't find any posts with the keyword `{search}`. Please try another keyword.</p>
+		<p class="text-xl md:w-1/3">We couldn't find any posts with the keyword `{search}`. Please try another keyword.</p>
 	</div>
 {/if}
