@@ -1,4 +1,4 @@
-<div class="md:w-4/12 space-y-4 md:p-4 min-[300px]:pb-4">
+<div class="md:w-4/12 space-y-4 md:p-4 min-[300px]:pb-8">
 	<img src="/FeaturedImg.png" alt="Featured Posts" class="rounded-lg" />
 	<div class="space-y-4">
 		<div class="flex gap-2 items-center text-white text-opacity-60">

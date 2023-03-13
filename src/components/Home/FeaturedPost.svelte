@@ -1,4 +1,4 @@
-<div class="flex xl:flex-row min-[300px]:flex-col gap-5 min-[300px]:border-b-2 border-white border-opacity-10 min-[300px]:pb-8">
+<div class="flex md:flex-row min-[300px]:flex-col gap-5 min-[300px]:border-b-2 border-white border-opacity-10 min-[300px]:pb-8">
     <div class="md:w-8/12 min-[300px]:w-full">
         <img src="/FeaturedImg.png" alt="Featured Posts" class="rounded-lg h-fit">
     </div>
