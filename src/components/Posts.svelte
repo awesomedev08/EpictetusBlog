@@ -1,4 +1,4 @@
-<div class="w-4/12 space-y-4 box-border px-4">
+<div class="w-4/12 space-y-4 p-4">
 	<img src="/FeaturedImg.png" alt="Featured Posts" class="rounded-lg" />
 	<div class="space-y-4">
 		<div class="flex gap-2 items-center text-white text-opacity-60">
@@ -12,7 +12,7 @@
 		<p class="text-white text-opacity-60 leading-relaxed">
 			Auctor Porta. Augue vitae diam mauris faucibus blandit elit per, feugiat leo dui orci. Etiam vestibulum. Nostra netus per conubia dolor.
 		</p>
-		<div class="flex gap-5 items-center pt-4">
+		<div class="flex gap-5 items-center pt-2">
 			<img
 				src="https://randomuser.me/api/portraits/women/64.jpg"
 				alt="Users"
