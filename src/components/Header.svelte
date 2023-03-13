@@ -33,7 +33,7 @@
 
 <div class="flex justify-between items-center pb-12">
 	<div class="flex gap-3 items-center">
-		<div class="bg-[#4B5563] w-fit px-4 py-1 rounded-md">
+		<div class="bg-[#4B5563] w-fit px-4 py-1 rounded-md drop-shadow-lg">
 			<span class="text-2xl">{title.charAt(0)}</span>
 		</div>
 		<h1 class="text-lg">
