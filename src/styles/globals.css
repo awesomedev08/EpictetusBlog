@@ -11,4 +11,5 @@ html {
     margin: 0;
     background: linear-gradient(#374151, #111827);
     color: #fff;
+    min-height: 100vh;
 }

@@ -1,15 +1,22 @@
 <script>
-import '../styles/globals.css'
+	import Footer from '../components/Footer.svelte';
+	import Header from '../components/Header.svelte';
+	import '../styles/globals.css';
 
-export const ssr = false;
+	export const ssr = false;
 </script>
 
 <svelte:head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+		rel="stylesheet"
+	/>
 </svelte:head>
 
 <div class="container mx-auto px-36 py-8">
-    <slot />
+	<Header />
+	<slot />
+	<Footer />
 </div>

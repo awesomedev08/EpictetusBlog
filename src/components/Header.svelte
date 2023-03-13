@@ -1,5 +1,6 @@
 <script>
     let title = 'Epictetus'
+	let search = ""
 </script>
 
 <div class="flex justify-between items-center pb-12">
@@ -7,7 +8,9 @@
 		<div class="bg-[#4B5563] w-fit px-4 py-1 rounded-md">
 			<span class="text-2xl">{title.charAt(0)}</span>
 		</div>
-		<h1 class="text-lg">{title}</h1>
+		<h1 class="text-lg">
+			<a href="/">{title}</a>
+		</h1>
 	</div>
 
 	<div class="space-x-5">
@@ -34,10 +37,14 @@
 				/>
 			</svg>
 		</span>
-		<input
-			type="text"
-			class="bg-[#1F2937] bg-opacity-60 rounded-full outline-none pr-8 pl-12 py-2"
-			placeholder="Search"
-		/>
+		<form action={`/search`}>
+			<input
+				type="text"
+				class="bg-[#1F2937] bg-opacity-60 rounded-full outline-none pr-8 pl-12 py-2"
+				placeholder="Search"
+				name="q"
+				bind:value={search}
+			/>
+		</form>
 	</div>
 </div>
