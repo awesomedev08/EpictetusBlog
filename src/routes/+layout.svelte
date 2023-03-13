@@ -15,7 +15,7 @@
 	/>
 </svelte:head>
 
-<div class="container mx-auto px-36 py-8">
+<div class="container mx-auto xl:px-36 min-[300px]:px-5 py-8">
 	<Header />
 	<slot />
 	<Footer />

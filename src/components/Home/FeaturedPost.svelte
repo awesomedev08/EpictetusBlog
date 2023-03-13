@@ -1,8 +1,8 @@
-<div class="flex gap-5">
-    <div class="w-8/12">
+<div class="flex xl:flex-row min-[300px]:flex-col gap-5 min-[300px]:border-b-2 border-white border-opacity-10 min-[300px]:pb-8">
+    <div class="md:w-8/12 min-[300px]:w-full">
         <img src="/FeaturedImg.png" alt="Featured Posts" class="rounded-lg h-fit">
     </div>
-    <div class="p-8 w-4/12 space-y-4">
+    <div class="md:p-8 md:w-4/12 space-y-4">
         <div class="flex gap-2 items-center text-white text-opacity-60">
             <h1>UI DESIGN</h1>
             <span class="font-sans">&bull;</span>

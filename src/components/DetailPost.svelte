@@ -6,7 +6,7 @@
 			<h1>July 2, 2021</h1>
 		</div>
 
-		<div class="text-center px-6 w-1/2">
+		<div class="text-center px-6 md:w-1/2">
 			<h1 class="text-2xl leading-normal">
 				Understanding color theory: the color wheel and finding complementary colors lorem
 			</h1>
@@ -25,9 +25,9 @@
 		</div>
 	</div>
 
-	<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="Featured Posts" class="w-2/3 rounded-sm" />
+	<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="Featured Posts" class="md:w-2/3 rounded-sm" />
 
-	<div class="py-8 w-1/2">
+	<div class="py-8 md:w-1/2">
 		<p class="leading-relaxed">
 			Male sixth sea it a. Brought was signs female darkness signs form cattle land grass whose from
 			subdue also they're their brought seas isn't, to day from bearing grass third midst after

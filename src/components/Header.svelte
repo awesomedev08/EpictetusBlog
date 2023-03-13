@@ -32,6 +32,23 @@
 </script>
 
 <div class="flex justify-between items-center pb-12">
+	<div class="md:hidden min-[300px]:block">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="2"
+			stroke="currentColor"
+			class="w-6 h-6 text-white text-opacity-50"
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+			/>
+		</svg>
+	</div>
+
 	<div class="flex gap-3 items-center">
 		<div class="bg-[#4B5563] w-fit px-4 py-1 rounded-md drop-shadow-lg">
 			<span class="text-2xl">{title.charAt(0)}</span>
@@ -41,7 +58,24 @@
 		</h1>
 	</div>
 
-	<div class="space-x-5">
+	<div class="md:hidden min-[300px]:block">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="2.5"
+			stroke="currentColor"
+			class="w-6 h-w-6 text-white text-opacity-50"
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+			/>
+		</svg>
+	</div>
+
+	<div class="space-x-5 md:block min-[300px]:hidden">
 		{#if menu.length > 3}
 			{#each menu.splice(0, 3) as { slug, name }}
 				<a href={`/category/${slug}`}>{name}</a>
@@ -71,7 +105,11 @@
 							stroke="currentColor"
 							class="w-4 h-4"
 						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+							/>
 						</svg>
 					{/if}
 				</div>
@@ -92,7 +130,7 @@
 		{/if}
 	</div>
 
-	<div class="relative">
+	<div class="relative md:block min-[300px]:hidden">
 		<span class="absolute top-3 left-4">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
