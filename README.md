@@ -1,6 +1,8 @@
-# create-svelte
+<img src="https://github.com/ahmdsk/EpictetusBlog/blob/master/static/Epictetus.png" alt="Epictetus Blog" />
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Epictetus Blog SvelteKIT
+
+Slicing UI Design From [ArrayId](https://www.figma.com/community/file/1061308766782882467) With SvelteKIT, Vite, And TailwindCSS. Don't Forget To Star This Repo!
 
 ## Creating a project
 
