@@ -38,7 +38,7 @@
 	}
 </script>
 
-<div class="flex justify-between items-center md:pb-12 min-[300px]:pb-4">
+<div class="flex justify-between items-center md:pb-12 min-[300px]:pb-6">
 	<div class="md:hidden min-[300px]:block">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
