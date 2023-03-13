@@ -46,7 +46,7 @@
 		</div>
 	</div>
 	{#each menu as { slug, name }}
-		<a href="/post/{slug}" class="text-white block p-2 hover:translate-x-6 hover:text-opacity-50 transition-all ease-in duration-200"
+		<a href="/category/{slug}" class="text-white block p-2 hover:translate-x-6 hover:text-opacity-50 transition-all ease-in duration-200"
 			>{name}</a
 		>
 	{/each}
