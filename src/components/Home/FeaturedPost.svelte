@@ -8,7 +8,8 @@
             <span class="font-sans">&bull;</span>
             <h1>July 2, 2021</h1>
         </div>
-        <h1 class="text-3xl leading-normal">Understanding color theory: the color wheel and finding complementary colors</h1>
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <a class="text-3xl leading-normal" href="/post/hello-world">Understanding color theory: the color wheel and finding complementary colors</a>
         <p class="text-white text-opacity-60 leading-relaxed">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
         <div class="flex gap-5 items-center pt-4">
             <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="Users" class="w-14 rounded-full">
