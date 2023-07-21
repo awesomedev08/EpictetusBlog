@@ -1,6 +1,6 @@
 <img src="https://github.com/ahmdsk/EpictetusBlog/blob/master/static/Epictetus.png" alt="Epictetus Blog" />
 
-# Epictetus Blog SvelteKIT
+# Epictetus Blog SvelteKit
 
 Slicing UI Design From [ArrayId](https://www.figma.com/community/file/1061308766782882467) With SvelteKIT, Vite, And TailwindCSS. Don't Forget To Star This Repo!
 
