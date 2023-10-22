@@ -2,9 +2,6 @@
 
 # Epictetus Blog SvelteKit
 
-Slicing UI Design From [ArrayId](https://www.figma.com/community/file/1061308766782882467) With SvelteKIT, Vite, And TailwindCSS. Don't Forget To Star This Repo!
-
-See <a href="https://epictetus-sveltekit.netlify.app">EpictetusBlog</a> live
 
 ## Creating a project
 
